@@ -1,0 +1,8 @@
+# VSCode configuration
+.vscode
+
+# Build files
+*.o
+
+# Output files
+tmp
