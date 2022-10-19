@@ -11,9 +11,6 @@ RM = rm -f
 ${TARGET}: ${OBJ}
 	${CC} $< -o $@
 
-# test: ${TARGET}
-# ./${TARGET} && diff -u ${SRC} ${OUTPUT}
-
 all: ${TARGET}
 
 clean:
