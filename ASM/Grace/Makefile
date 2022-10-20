@@ -10,10 +10,7 @@ OUTPUT = ${TARGET}_kid.s
 	${CC} ${CFLAGS} $< -o $@
 
 ${TARGET}: ${OBJ}
-	gcc $< -o $@
-
-test: ${TARGET}
-	./${TARGET} && diff -u ${OUTPUT} ${SRC}
+	gcc $< -o $@ -Wl,-no_pie
 
 all: ${TARGET}
 

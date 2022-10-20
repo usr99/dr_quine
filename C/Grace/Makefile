@@ -12,9 +12,6 @@ OUTPUT = ${TARGET}_kid.c
 ${TARGET}: ${OBJ}
 	${CC} $< -o $@
 
-test: ${TARGET}
-	./${TARGET} && diff -u ${SRC} ${OUTPUT}
-
 all: ${TARGET}
 
 clean:

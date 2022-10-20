@@ -9,7 +9,7 @@ RM = rm -f
 	${CC} ${CFLAGS} $< -o $@
 
 ${TARGET}: ${OBJ}
-	gcc $< -o $@
+	gcc $< -o $@ -Wl,-no_pie
 
 all: ${TARGET}
 

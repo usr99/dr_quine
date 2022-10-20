@@ -12,9 +12,6 @@ OUTPUT = tmp
 ${TARGET}: ${OBJ}
 	${CC} $< -o $@
 
-test: ${TARGET}
-	./${TARGET} > ${OUTPUT} && diff -u ${OUTPUT} ${SRC}
-
 all: ${TARGET}
 
 clean:
