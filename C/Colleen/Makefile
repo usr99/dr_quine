@@ -4,7 +4,6 @@ OBJ = ${SRC:.c=.o}
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
-OUTPUT = tmp
 
 %.o: %.c
 	${CC} ${CFLAGS} -c $< -o $@
@@ -16,7 +15,6 @@ all: ${TARGET}
 
 clean:
 	${RM} ${OBJ}
-	${RM} ${OUTPUT}
 
 fclean: clean
 	${RM} ${TARGET}

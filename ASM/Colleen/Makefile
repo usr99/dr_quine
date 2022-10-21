@@ -4,7 +4,6 @@ OBJ = ${SRC:.s=.o}
 CC = nasm
 CFLAGS = -f macho64
 RM = rm -f
-OUTPUT = tmp
 
 %.o: %.s
 	${CC} ${CFLAGS} $< -o $@
@@ -16,7 +15,6 @@ all: ${TARGET}
 
 clean:
 	${RM} ${OBJ}
-	${RM} ${OUTPUT}
 
 fclean: clean
 	${RM} ${TARGET}
