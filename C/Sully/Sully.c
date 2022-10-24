@@ -3,7 +3,7 @@
 
 int main()
 {
-	int i = -1;
+	int i = 5;
 	if (i < 0)
 		return 0;
 
